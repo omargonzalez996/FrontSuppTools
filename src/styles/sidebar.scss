@@ -1,0 +1,45 @@
+.sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  padding: 2rem 0.5rem 0.5rem 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  .sidebar-icon {
+    margin-bottom: 2rem;
+  }
+  
+  .sidebar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    button {
+      border-radius: 8px;
+      border: 1px solid transparent;
+      padding: 0.6em 1.2em;
+      font-size: 1em;
+      font-weight: 500;
+      font-family: inherit;
+      margin-bottom: 1rem;
+      min-width: 200px;
+      max-width: 70%;
+      background-color: rgba(0, 0, 0, 0.05);
+      overflow-x: hidden;
+      color: #303030;
+      cursor: pointer;
+      transition: border-color 0.25s;
+      .active {
+        border-color: #646cff;
+        outline: 4px auto -webkit-focus-ring-color;
+      }
+    }
+  }
+}
